@@ -9,10 +9,12 @@ import 'hammerjs';
 import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
+import { TodosComponent } from './components/todos.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,
