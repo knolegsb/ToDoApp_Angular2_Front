@@ -9,7 +9,8 @@ import 'hammerjs';
 import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
-import { TodosComponent } from './components/todos.component'
+import { TodosComponent } from './components/todos.component';
+import { TodoService } from './services/todos.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { TodosComponent } from './components/todos.component'
     BrowserAnimationsModule,
     MaterializeModule
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
